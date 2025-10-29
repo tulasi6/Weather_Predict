@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { adjustViewport } from '../utils/viewport';
+
+
 
 // Small mapping from Open-Meteo weather codes to text
 const weatherCodeMap = {
@@ -83,7 +86,7 @@ export default function Weather() {
         lat: latitude,
         lon: longitude,
         weather: wJson.current_weather
-      });
+      }); adjustViewport();
     } catch (err) {
       console.error(err);
       setError('Something went wrong. Please try again.');
