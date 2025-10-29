@@ -1,5 +1,5 @@
 :root{
-  --card-bg: #b95a5a91;
+  --card-bg: #f4f7f9e8;
   --accent: #2b8cff;
   --muted: #666;
   --danger: #d9534f;
@@ -8,7 +8,7 @@
 
 /* Basic resets */
 *{box-sizing:border-box}
-body{font-family:Inter, Roboto, Arial, sans-serif;background:#8eadde;margin:0;padding:20px;color:#e5d4d4}
+body{font-family:Inter, Roboto, Arial, sans-serif;background:#f1f3f6db;margin:0;padding:20px;color:#090000}
 .app{max-width:760px;margin:12px auto}
 .app-header{margin-bottom:12px}
 .app-header h1{margin:0;font-size:1.6rem}
@@ -18,7 +18,7 @@ body{font-family:Inter, Roboto, Arial, sans-serif;background:#8eadde;margin:0;pa
   background:var(--card-bg);
   border-radius:var(--radius);
   padding:18px;
-  box-shadow:0 6px 18px rgba(15,30,60,0.06);
+  box-shadow:0 6px 18px rgba(0, 4, 10, 0.968);
 }
 
 .search-row{display:flex;gap:10px;align-items:center;margin-bottom:12px}
@@ -29,14 +29,14 @@ body{font-family:Inter, Roboto, Arial, sans-serif;background:#8eadde;margin:0;pa
 .unit-toggle input{margin-right:4px}
 
 .info{padding:12px;color:var(--muted)}
-.error{padding:10px;background:#fff0f0;border:1px solid #f9f2f2;color:var(--danger);border-radius:8px;margin:8px 0}
+.error{padding:10px;background:#090000;border:1px solid #0a0000;color:var(--danger);border-radius:8px;margin:8px 0}
 
-.current-weather{display:flex;gap:20px;align-items:center;padding-top:8px;border-top:1px solid #f4f6f8;margin-top:12px}
+.current-weather{display:flex;gap:20px;align-items:center;padding-top:8px;border-top:1px solid #00060b;margin-top:12px}
 .left{flex:1}
 .right{width:120px;text-align:center}
 .temp{font-size:2rem;font-weight:700;margin:6px 0}
-.desc{color:var(--muted)}
-.meta{margin-top:8px;color:var(--muted);display:flex;gap:12px;font-size:0.9rem;flex-wrap:wrap}
+.desc{color:#222121}
+.meta{margin-top:8px;color:#090000;display:flex;gap:12px;font-size:0.9rem;flex-wrap:wrap}
 .big-icon{font-size:48px}
 
 .notes{margin-top:14px;color:var(--muted);font-size:0.9rem}
