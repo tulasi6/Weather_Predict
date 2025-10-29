@@ -86,7 +86,8 @@ export default function Weather() {
         lat: latitude,
         lon: longitude,
         weather: wJson.current_weather
-      }); adjustViewport();
+      }); 
+      adjustViewport();
     } catch (err) {
       console.error(err);
       setError('Something went wrong. Please try again.');
@@ -94,6 +95,8 @@ export default function Weather() {
       setLoading(false);
     }
   };
+
+  
 
   return (
     <div className="weather-card">
